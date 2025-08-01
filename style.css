@@ -1,0 +1,63 @@
+header {
+    background: gray;
+    position: relative;
+    height: 200px;
+
+}
+
+nav {
+    background: gray;
+    position: relative;
+    border-color: black;
+    border: 1px;
+}
+
+article {
+    background: gray;
+    position: relative;
+    height: 700px;
+}
+
+footer {
+    background: gray;
+    position: relative;
+    height: 70px;
+}
+
+body {
+    position: relative;
+    height: 200px;
+    width: 1000px;
+    left: 100px;
+    background: lightgrey;
+}
+
+.topo-site {
+    background-image: url('img/topo-site.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 1000px;
+    height: 200px;
+    margin: 0;
+}
+
+.rodape {
+    background-image: url('img/rodape.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 1000px;
+    height: 70px;
+    margin: 0;
+}
+
+.menu {
+    background-image: url('img/Menu.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 1000px;
+    height: 50px;
+    margin: 0;
+}
