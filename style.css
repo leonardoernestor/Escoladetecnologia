@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
     background: gray;
     position: relative;
@@ -25,11 +29,10 @@ footer {
 }
 
 body {
-    position: relative;
-    height: 200px;
-    width: 1000px;
-    left: 100px;
-    background: lightgrey;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f4f6fb;
+    color: #222;
 }
 
 .topo-site {
@@ -37,9 +40,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    width: 1000px;
+    width: 100%;
     height: 200px;
     margin: 0;
+    background: #1e88e5;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
 }
 
 .rodape {
@@ -47,9 +54,14 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    width: 1000px;
+    width: 100%;
     height: 70px;
     margin: 0;
+    background: #1e88e5;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
 
 .menu {
@@ -57,7 +69,60 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    width: 1000px;
+    width: 100%;
     height: 50px;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: #1565c0;
+    padding: 1rem 0;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #ffd600;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    /* opcional, para destacar do fundo */
+    min-height: 100vh;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+    /* opcional, para dar leveza */
+    border-radius: 8px;
+    /* opcional */
+    padding-bottom: 2rem;
+    /* espaço para o rodapé */
+}
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    main {
+        margin: 1rem 0;
+    }
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
 }
