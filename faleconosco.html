@@ -4,44 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escola de tecnologia </title>
-    <link rel="stylesheet" type="Text/css" href="style.css">
+    <title>Escola de tecnologia</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="topo-site"></div>
-    </header>
-
-    <nav>
-        <center>
+    <div class="container">
+        <header>
+            <div class="topo-site">
+                <h1>Escola de Tecnologia</h1>
+            </div>
+        </header>
+        <nav>
             <div class="menu">
-                <a href="index.html">Inicio</a>
+                <a href="index.html">Início</a>
                 <a href="empresa.html">Empresa</a>
                 <a href="cursos.html">Cursos</a>
                 <a href="faleconosco.html">Fale Conosco</a>
-        </center>
-        </div>
+            </div>
+        </nav>
+        <main>
+            <section class="intro">
+                <h2>Fale Conosco</h2>
+                <p>
+                    Entre em contato conosco para mais informações sobre nossos cursos, serviços ou qualquer outra
+                    dúvida
+                    que você tenha. Estamos aqui para ajudar!
+                </p>
+                <p>
+                    Preencha o formulário abaixo para enviar sua mensagem e responderemos o mais breve possível.
+                </p>
+                <form onsubmit="enviarEmail(event)" class="contato-form">
+                    <label for="name">Nome:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Mensagem:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </form>
+            </section>
+        </main>
+      <footer>
+            <div class="rodape">
+                &copy; 2025 Escola de Tecnologia. Todos os direitos reservados.
+            </div>
+        </footer>
 
-    </nav>
-    <article>
-        Fale Conosco - Entre em contato conosco para mais informações sobre nossos cursos, serviços ou qualquer outra
-        dúvida que você tenha. Estamos aqui para ajudar! <br>
-        Preencha o formulário abaixo para enviar sua mensagem e responderemos o mais breve possível. <br>
-        <form action="submit_form.php" method="post">
-            <label for="name">Nome:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="message">Mensagem:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </form>
-    </article>
-    <footer>
-        <div class="rodape"></div>
-    </footer>
+   
+    
 </body>
 
 </html>
